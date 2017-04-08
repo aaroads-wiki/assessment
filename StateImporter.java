@@ -1,0 +1,60 @@
+
+public class StateImporter {
+	public void Run() {
+		PageImporter importer = new PageImporter();
+		importer.Run("Alabama");
+		importer.Run("Alaska");
+		importer.Run("Arizona");
+		importer.Run("Arkansas");
+		importer.Run("California");
+		importer.Run("Colorado");
+		importer.Run("Connecticut");
+		importer.Run("Delaware");
+		importer.Run("District of Columbia");
+		importer.Run("Florida");
+		importer.Run("Georgia");
+		importer.Run("Guam");
+		importer.Run("Hawaii");
+		importer.Run("Idaho");
+		importer.Run("Illinois");
+		importer.Run("Indiana");
+		importer.Run("Iowa");
+		importer.Run("Kansas");
+		importer.Run("Kentucky");
+		importer.Run("Louisiana");
+		importer.Run("Maine");
+		importer.Run("Maryland");
+		importer.Run("Massachusetts");
+		importer.Run("Michigan");
+		importer.Run("Minnesota");
+		importer.Run("Mississippi");
+		importer.Run("Missouri");
+		importer.Run("Montana");
+		importer.Run("Nebraska");
+		importer.Run("Nevada");
+		importer.Run("New Hampshire");
+		importer.Run("New Jersey");
+		importer.Run("New Mexico");
+		importer.Run("New York");
+		importer.Run("North Carolina");
+		importer.Run("North Dakota");
+		importer.Run("Ohio");
+		importer.Run("Oklahoma");
+		importer.Run("Oregon");
+		importer.Run("Pennsylvania");
+		importer.Run("Puerto Rico");
+		importer.Run("Rhode Island");
+		importer.Run("South Carolina");
+		importer.Run("South Dakota");
+		importer.Run("Tennessee");
+		importer.Run("Texas");
+		importer.Run("U.S. Virgin Islands");
+		importer.Run("Utah");
+		importer.Run("Vermont");
+		importer.Run("Virginia");
+		importer.Run("Washington");
+		importer.Run("West Virginia");
+		importer.Run("Wisconsin");
+		importer.Run("Wyoming");
+	}
+}

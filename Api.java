@@ -9,11 +9,7 @@ public class Api {
 		HttpURLConnection connection = (HttpURLConnection) urlObject.openConnection();
 		InputStream in = connection.getInputStream();
 		result = new BufferedReader(new InputStreamReader(in));
-		String line;
-		while ((line = result.readLine()) != null) {
-			System.out.println(line);
-		}
-		
+		String line = result.readLine();
 		return line;
 	}
 	
