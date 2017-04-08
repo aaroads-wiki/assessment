@@ -1,7 +1,7 @@
 import java.net.URLEncoder;
 
 public class PageImporter {
-	public void Run(String project) {
+	public StateStats Run(String project) {
 		try {
 			CategoryMembers api = new CategoryMembers ();
 			int fa = api.categoryMembers(URLEncoder.encode("FA-Class " +project+" road transport articles", "UTF-8"));
@@ -11,10 +11,13 @@ public class PageImporter {
 			int c = api.categoryMembers(URLEncoder.encode("C-Class " +project+" road transport articles", "UTF-8"));
 			int start = api.categoryMembers(URLEncoder.encode("Start-Class " +project+" road transport articles", "UTF-8"));
 			int stub = api.categoryMembers(URLEncoder.encode("Stub-Class " +project+" road transport articles", "UTF-8"));
-			System.err.println(project + " " + start);
+			StateStats stats = new StateStats(project, fa, a, ga, b, c, start, stub);
+			System.err.println(stats);
+			return stats;
 		}
 		catch (Exception e) {
 			System.err.println("Exception thrown:" + e.getMessage() + e.getStackTrace());
+			return null;
 		}
 	}
 }
