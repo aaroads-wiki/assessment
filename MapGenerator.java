@@ -12,5 +12,18 @@ public class MapGenerator {
 		stubMap.Generate(results);
 		WwMap wwMap = new WwMap();
 		wwMap.Generate(results);
+		WwMapAlt wwMapAlt = new WwMapAlt();
+		wwMapAlt.Generate(results);
+		WwMapAlt4 wwMapAlt4 = new WwMapAlt4();
+		wwMapAlt4.Generate(results);
+		
+		WwMapAlt3 wwMapAlt3 = new WwMapAlt3();
+		wwMapAlt3.Generate(results);
+		
+		WwMapAlt2 wwMapAlt2 = new WwMapAlt2();
+		wwMapAlt2.Generate(results);
+		
+		WwMapAlt1 wwMapAlt1 = new WwMapAlt1();
+		wwMapAlt1.Generate(results);
 	}
 }
