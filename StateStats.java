@@ -49,4 +49,8 @@ public class StateStats {
 		return abbreviation;
 	
 	}
+	
+	public int getStubs() {
+		return stub;
+	}
 }

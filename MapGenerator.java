@@ -8,5 +8,7 @@ public class MapGenerator {
 
 		BestArticle bestArticle = new BestArticle();
 		bestArticle.Generate(results);
+		StubMap stubMap = new StubMap();
+		stubMap.Generate(results);
 	}
 }
