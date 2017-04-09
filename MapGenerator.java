@@ -10,5 +10,7 @@ public class MapGenerator {
 		bestArticle.Generate(results);
 		StubMap stubMap = new StubMap();
 		stubMap.Generate(results);
+		WwMap wwMap = new WwMap();
+		wwMap.Generate(results);
 	}
 }

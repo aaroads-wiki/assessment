@@ -53,4 +53,8 @@ public class StateStats {
 	public int getStubs() {
 		return stub;
 	}
+	
+	public double getWikiWork() {
+		return (1*a+2*ga+3*b+4*c+5*start+6*stub) / ((double)(fa+a+ga+b+c+start+stub));
+	}
 }
