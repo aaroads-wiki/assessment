@@ -14,7 +14,7 @@ public class StateImporter {
 		states.add(importer.Run("Delaware"));
 		states.add(importer.Run("District of Columbia"));
 		states.add(importer.Run("Florida"));
-		states.add(importer.Run("Georgia"));
+		states.add(importer.Run("Georgia (U.S. state)"));
 		states.add(importer.Run("Guam"));
 		states.add(importer.Run("Hawaii"));
 		states.add(importer.Run("Idaho"));

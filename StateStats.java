@@ -1,6 +1,7 @@
 
 public class StateStats {
 	private String state;
+	private String abbreviation;
 	private int fa;
 	private int a;
 	private int ga;
@@ -9,7 +10,7 @@ public class StateStats {
 	private int start;
 	private int stub;
 
-	public StateStats (String state, int fa, int a, int ga, int b, int c, int start, int stub) {
+	public StateStats (String state, String abbreviation, int fa, int a, int ga, int b, int c, int start, int stub) {
 		this.state = state;
 		this.fa=fa;
 		this.a=a;
@@ -18,6 +19,7 @@ public class StateStats {
 		this.c=c;
 		this.start=start;
 		this.stub=stub;
+		this.abbreviation = abbreviation;
 	}
 	
 	public String GetBest() {
@@ -39,7 +41,12 @@ public class StateStats {
 	
 	}
 	public String toString() {
-		return state + ": " + fa + " " + a + " " + ga + " " + b + " " + c + " " + start + " " + stub;
+		return abbreviation + ": " + fa + " " + a + " " + ga + " " + b + " " + c + " " + start + " " + stub;
+	
+	}
+	
+	public String getAbbreviation() {
+		return abbreviation;
 	
 	}
 }

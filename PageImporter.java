@@ -1,5 +1,7 @@
 import java.net.URLEncoder;
 
+import javax.xml.bind.JAXBElement.GlobalScope;
+
 public class PageImporter {
 	public StateStats Run(String project) {
 		try {
@@ -11,7 +13,7 @@ public class PageImporter {
 			int c = api.categoryMembers(URLEncoder.encode("C-Class " +project+" road transport articles", "UTF-8"));
 			int start = api.categoryMembers(URLEncoder.encode("Start-Class " +project+" road transport articles", "UTF-8"));
 			int stub = api.categoryMembers(URLEncoder.encode("Stub-Class " +project+" road transport articles", "UTF-8"));
-			StateStats stats = new StateStats(project, fa, a, ga, b, c, start, stub);
+			StateStats stats = new StateStats(project, Globals.getAbbreviation(project), fa, a, ga, b, c, start, stub);
 			System.err.println(stats);
 			return stats;
 		}
